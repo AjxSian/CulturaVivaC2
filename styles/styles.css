@@ -11,7 +11,7 @@ body{
 header{
     width: 100%;
     height: 175px;
-    background-color: #eb5e28ff;
+    background-color: #0A0499;
 }
 header h1{
     text-align: center;
@@ -68,7 +68,8 @@ header h2{
     width: 100%;
     height: 50px;
     padding: 8px;
-    background-color: #f9a03fff;
+    background-color: #1e0dd4;
+    color: white;
 }
 .imagen-card > img{
     width: 100%;
@@ -83,7 +84,7 @@ header h2{
     height: 100%;
     top: 0;
     transform: scale(0);
-    background: hsla(41, 87%, 64%, 0.7);
+    background: hsla(214, 97%, 55%, 0.6);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -156,7 +157,7 @@ header h2{
         position: absolute;
         width: 100%;
         padding: 8px;
-        background-color: #f9a03fff;
+        background-color: #1906f0;
         height: auto;
         box-sizing: border-box;
     }
