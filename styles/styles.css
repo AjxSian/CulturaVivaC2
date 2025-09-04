@@ -10,8 +10,12 @@ body{
 }
 header{
     width: 100%;
-    height: 175px;
-    background-color: #0A0499;
+    height: 250px;
+    background-color: #05033d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 header h1{
     text-align: center;
@@ -26,6 +30,33 @@ header h2{
     padding: 5px;
     font-weight: 600;
     color: #fff;
+}
+.btn{
+    justify-content: center;
+    background: hsl(234, 100%, 25%);
+    width: 200px;
+    height: 60px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.btn:hover {
+    background: hsla(214, 97%, 65%, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    background: hsla(214, 97%, 45%, 1);
 }
 /*.galeria-cards{
     display: flex;
@@ -128,6 +159,79 @@ header h2{
     padding: 20px;
     border-radius: 8px;
 }
+.footer {
+    background-color: #05033d; /* azul muy oscuro */
+    color: #f5e2b8;           /* dorado claro */
+    padding: 40px 20px 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin: 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    position: relative;
+    font-weight: 700;
+    color: #f5e2b8;
+    text-transform: uppercase;
+}
+
+.footer-col h4::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: #f5e2b8;
+    display: block;
+    margin: 8px auto 0;
+}
+
+.footer-col p {
+    font-size: 15px;
+    color: #fff;
+}
+.footer-col .eslogan{
+    font-weight: 900;
+}
+
+/* 🔹 Iconos de redes */
+.redes a {
+    color: #f5e2b8;
+    font-size: 22px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.redes a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* 🔹 Línea final */
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #f5e2b8;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #f5e2b8;
+}
 @media screen and (max-width: 768px) {/*
     .hover-galeria p {
         font-size: 10px; 
@@ -212,4 +316,29 @@ header h2{
         font-size: 12px;
         padding: 6px;
     }
+    header h1 {
+        font-size: 40px;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    .btn {
+        width: 160px;
+        height: 50px;
+        font-size: 18px;
+    }
+    .footer-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 20px;
+    }
+    .footer-col .eslogan{
+    font-weight: 900;
+    align-items: center;
+}
 }
